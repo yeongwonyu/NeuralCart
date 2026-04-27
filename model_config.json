@@ -1,0 +1,50 @@
+{
+  "model": {
+    "type": "Sequential",
+    "layers": [
+      {
+        "type": "Linear",
+        "in_features": 2,
+        "out_features": 8,
+        "activation": "relu",
+        "gain": 1.0
+      },
+      {
+        "type": "ReLU"
+      },
+      {
+        "type": "Linear",
+        "in_features": 8,
+        "out_features": 16,
+        "activation": "relu",
+        "gain": 1.0
+      },
+      {
+        "type": "ReLU"
+      },
+      {
+        "type": "Linear",
+        "in_features": 16,
+        "out_features": 4,
+        "activation": "relu",
+        "gain": 1.0
+      },
+      {
+        "type": "ReLU"
+      },
+      {
+        "type": "Linear",
+        "in_features": 4,
+        "out_features": 1,
+        "gain": 1.0
+      }
+    ]
+  },
+  "loss": {
+    "type": "MSELoss"
+  },
+  "optimizer": {
+    "type": "GD",
+    "lr": 0.01
+  }
+}
