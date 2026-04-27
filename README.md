@@ -19,4 +19,3 @@ NeuralCart는 딥러닝 모델을 '카트 방식으로 구성'할 수 있는 프
 
 <p align="center">
   <img src="assets/ui.png" width="800"/>
-</p>
